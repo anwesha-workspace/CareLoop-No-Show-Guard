@@ -1,6 +1,6 @@
 # CareLoop Clinics — No-Show Guard
 
-**GitHub Repository:** [Add your public GitHub repository link here]
+**GitHub Repository:** https://github.com/anwesha-workspace/CareLoop-No-Show-Guard
 
 ## Project Summary
 
