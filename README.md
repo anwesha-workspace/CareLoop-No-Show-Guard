@@ -24,9 +24,14 @@ Logistic Regression was selected because it achieved the highest cross-validatio
 
 ## GenAI Prompt Comparison
 
-The CRAFT prompt was used to classify the notes with a defined set of allowed root causes and instructions not to guess when evidence was unclear.
+The CRAFT prompt was compared with a simple prompt using notes N007 and N009.
 
-The simple-prompt versus CRAFT-prompt comparison for N007 and N009 is pending because the Gemini API free-tier quota was reached. This section should be updated after completing that comparison.
+- V1 (simple prompt) produced free-text root causes for both notes, which failed allowed-category validation.
+- V2 (CRAFT prompt) produced valid categories for both notes.
+- N007: `forgot_or_no_reminder` (confidence 0.95).
+- N009: `other` (confidence 0.85), avoiding an unsupported assumption.
+- **Selected prompt:** V2 CRAFT.
+- **Successful Gemini API calls:** 22 (below the limit of 25).
 
 ## Limitations
 
